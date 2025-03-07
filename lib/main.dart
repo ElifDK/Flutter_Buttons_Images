@@ -31,10 +31,12 @@ class Home extends StatelessWidget {
               icon: Icon(Icons.email),
             label: Text('Send Email'),
             ),
-          Expanded(child: Image(image: NetworkImage('https://cdn.pixabay.com/photo/2023/11/14/14/59/mountains-8387889_1280.jpg'))),
-          Expanded(child: Image(image: AssetImage('assets/pic1.jpg')))
-
-
+          Expanded(child: 
+            //Image(image: NetworkImage('https://cdn.pixabay.com/photo/2023/11/14/14/59/mountains-8387889_1280.jpg'))),
+            Image.network('https://cdn.pixabay.com/photo/2023/11/14/14/59/mountains-8387889_1280.jpg')),
+          Expanded(child: 
+            //Image(image: AssetImage('assets/pic1.jpg'))
+            Image.asset('assets/pic2.jpg'))
         ],
       ),
     );
